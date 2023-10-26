@@ -1,0 +1,18 @@
+---
+title: "Open Textbooks With Quarto & GitHub"
+author: "Neha Moopen"
+date: last-modified
+title-slide-attributes:
+  data-background-color: "#FFCD00" 
+format: 
+  revealjs: 
+    output-file: index.html
+    controls: true
+    embed-resources: true
+---
+
+# Hello There
+
+# sdsdf
+
+# sfsdf
