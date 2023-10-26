@@ -146,6 +146,8 @@ We are simply going to drag and drop the contents of our local folder to GitHub 
 
 7. Copy the BibText key from `workshop-materials/reference.txt` into the `references.bib` of your book. Cite the reference somewhere in your chapter.
 
-8. Render the book to HTML using `quarto preview` first and then `quarto render`.
+8. Update `_quarto.yml` to include the new chapter.
 
-9. Drag and drop the `docs` folder to GitHub.
+9. Render the book to HTML using `quarto preview` first and then `quarto render`.
+
+10. Drag and drop the `docs` folder to GitHub.
