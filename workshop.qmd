@@ -5,14 +5,147 @@ date: last-modified
 title-slide-attributes:
   data-background-color: "#FFCD00" 
 format: 
-  revealjs: 
-    output-file: index.html
-    controls: true
+  revealjs:
     embed-resources: true
+    controls: true 
+    output-file: index.html
 ---
 
 # Hello There
 
-# sdsdf
+[https://utrechtuniversity.github.io/workshop-open-textbooks/](https://utrechtuniversity.github.io/workshop-open-textbooks/)
 
-# sfsdf
+# Workshop Materials
+
+[https://github.com/UtrechtUniversity/workshop-open-textbooks/raw/main/workshop-materials.zip](https://github.com/UtrechtUniversity/workshop-open-textbooks/raw/main/workshop-materials.zip)
+
+<br>
+_Right-click the link and select 'Save As...'_
+<br>
+_Don't forget to the unzip the file!_
+
+# So You Want To Make An Open Textbook...
+
+## The Tools You Need...
+
+<br>
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://rstudio.github.io/cheatsheets/html/images/logo-quarto.png)
+
+An open-source scientific and technical publishing system built on Pandoc.
+
+:::
+
+::: {.column width="50%"}
+
+![](https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png)
+
+A platform to _host_ your content and _publish_ it.
+:::
+
+::::
+
+## The Tools You Need...
+
+- Quarto works with R and/or Python, plus their related _editors_. 
+
+Note that for a book project, you won't have to do much programming per se.
+
+- You'll want to set up _Version Control_ with Git to make full use of it's capabilities. 
+
+# Let's Get Started!
+
+## Create A Quarto Book Project
+
+1. To create a new book project within RStudio, use the **New Project** command and select **Quarto Book**.
+
+2. Then, provide a directory name and other relevant options for the book.
+
+3. Edit the `_quarto.yml` to specify `output-dir: docs`. Optionally, comment out the `pdf` options to keep things quick.
+
+4. Click the **Render** button to preview the book.
+
+_source:_ [https://quarto.org/docs/books/#quick-start](https://quarto.org/docs/books/#quick-start)
+
+## So What Just Happened
+
+Let's take a look!
+
+```
+my-open-textbooks
+    > cover.png
+    > index.qmd
+    > intro.qmd
+    > my-open-textbook.Rproj
+    > references.bib
+    > references.qmd
+    > summary.qmd
+    > _quarto.yml
+```
+
+- `my-open-textbook.Rproj`: The R project file, use this to open your project everytime you want to work on it.
+
+- `_quarto.yml`: The Quarto project file, contains configuration details and metadata.
+
+- `qmd` files: These are your chapters.
+
+- `references.bib`: The bibliography file.
+
+## Workflow
+
+- `quarto preview`: Terminal command to preview the book.
+
+- `quarto render`: Terminal command to render the book (all output formats specified in `_quarto.yml`).
+
+- `quarto render --to pdf`: Terminal command to render the to a specific format (other options: `docx`, `html`, `epub`).
+
+source: _source:_ [https://quarto.org/docs/books/#workflow](https://quarto.org/docs/books/#workflow)
+
+# Let's Git This Book Online!
+
+## From Your Computer To The World... { .smaller}
+
+1. Go to [github.com](https://github.com/) and create a new repository called `my-open-textbook`
+
+_Do not select any of the options (README, License, .gitignore)_
+
+Make sure your repository is set to _Public_ visibility.
+
+2. Go to your repository's settings and find the options for _GitHub Pages_.
+
+Set the GitHub Pages source as the `main` repository and `docs` folder.
+
+3. Go back to the main page for your repsitory and select _Upload Files_
+
+We are simply going to drag and drop the contents of our local folder to GitHub and save it with a _commit_ message.
+
+4. If all goes well, your book will be online in a minute! The URL will be: `your-username.github.io/my-open-textbook`
+
+# Discussion
+
+# Let's Play Around With Our Textbook
+
+## Exercises {.smaller .scrollable}
+
+1. Make a new `qmd` file and name it `episode-5.qmd` 
+
+2. Copy the text from `workshop-materials/episode-t.txt` into the chapter and save it.
+
+3. Use [Markdown Syntax](https://www.markdownguide.org/cheat-sheet/) to turn some text bold. For example, **GALACTIC EMPIRE** & **DEATH STAR**.
+
+4. Use [Markdown Syntax](https://www.markdownguide.org/cheat-sheet/) to embed the `episode-5.jpg` image into the chapter.
+
+5. Use [Markdown Syntax](https://www.markdownguide.org/cheat-sheet/) to embed some links into the chapter. Refer to `workshop-materials/links.txt`
+
+6. Add a disclaimer/copyright notice in the form of a Quarto _call-out block_. Copy it from `workshop-materials/copyright.txt`.
+
+7. Copy the BibText key from `workshop-materials/reference.txt` into the `references.bib` of your book. Cite the reference somewhere in your chapter.
+
+8. Render the book to HTML using `quarto preview` first and then `quarto render`.
+
+9. Drag and drop the `docs` folder to GitHub.

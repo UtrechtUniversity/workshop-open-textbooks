@@ -1,0 +1,7 @@
+Princess Leia: https://starwars.fandom.com/wiki/Leia_Skywalker_Organa_Solo
+
+Video (option 1): https://www.youtube.com/watch?v=vZ734NWnAHA
+
+Video (option 2): <iframe width="560" height="315" src="https://www.youtube.com/embed/vZ734NWnAHA?si=T7gCQvfZ2WdJMb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Web Image: https://upload.wikimedia.org/wikipedia/en/f/f9/Death_star1.png

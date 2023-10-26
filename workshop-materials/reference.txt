@@ -1,0 +1,11 @@
+@misc{geeksOpeningCrawlText2023,
+  title = {The {{Opening Crawl Text}} of {{Every Star Wars Film}} | {{Wealth}} of {{Geeks}}},
+  author = {of Geeks, Wealth},
+  year = {2023},
+  month = may,
+  urldate = {2023-10-26},
+  abstract = {May 4, 2023 The Star Wars introduction text or "opening crawl" is one of the first truly great things about Star Wars films. Since its first release, the},
+  chapter = {Star Wars},
+  langid = {american},
+  file = {C:\Users\Moope001\Zotero\storage\UA64QYJN\the-opening-crawl-text-of-every-star-wars-film.html}
+}
